@@ -70,8 +70,14 @@
                 this.pick = true;
                 if(answer === this.colour) {
                     this.win = true;
+                    setTimeout(() => {
+                        document.location.reload();
+                    }, 3000);
                 } else if( answer !== this.colour) {
                     this.win = false;
+                    setTimeout(() => {
+                        document.location.reload();
+                    }, 3000);
                 }
             }
         },
