@@ -88,10 +88,10 @@
         },
         data() {
             return {
-                mode: 'easy',
-                height: '100%',
-                arraySize: 2,
-                numOfSquares: 3,
+                mode: 'medium',
+                height: '50%',
+                arraySize: 5,
+                numOfSquares: 6,
                 colours: [],
                 win: false,
                 pick: false,
