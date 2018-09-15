@@ -24,7 +24,7 @@
 
     #winIcon {
         font-size: 150px;
-        color: #e1b12c;
+        color: #c23616;
         margin-bottom: 40px;
     }
 
@@ -44,8 +44,8 @@
 
 <template>
     <div class="screenContainer">
-        <h1>WELL DONE!</h1>
-        <span class="fas fa-trophy" id="winIcon"></span>
+        <h1>WRONG!</h1>
+        <span class="fas fa-window-close" id="winIcon"></span>
         <div id="winningColour" v-bind:style="{ backgroundColor: winningColour }"><p>{{winningColour.toUpperCase()}}</p></div>
     </div>
 </template>

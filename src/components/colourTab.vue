@@ -7,6 +7,7 @@
         position: absolute;
         z-index: 10;
         right: 10%;
+        top: 0;
 
         width: 20%;
         height: 60px;
@@ -17,7 +18,7 @@
         border: 2px solid #000;
         border-top: none;
 
-        box-shadow: 1px 2px 15px #000;
+        box-shadow: 1px 2px 15px #444;
     }
 
     h4 {

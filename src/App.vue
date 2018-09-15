@@ -3,6 +3,8 @@
         width: 100%;
         height: 100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -11,6 +13,8 @@
 <template>
     <div class="container">
         <colourTab :colour="colour"></colourTab>
+        <winScreen v-show:if="pick == true && win == true" :winningColour="colour"></winScreen>
+        <loseScreen v-show:if="pick == true && win == false" :winningColour="colour"></loseScreen> 
         <colourSquare v-for="n in 16" @colour="pushColour" @clicked="checkAns"></colourSquare>
     </div>
 </template>
@@ -18,12 +22,16 @@
 <script>
     import colourSquare from './components/colourSquare.vue';
     import colourTab from './components/colourTab.vue';
+    import winScreen from './components/winScreen.vue';
+    import loseScreen from './components/loseScreen.vue';
 
     export default {
         name: 'app',
         components: {
             colourSquare,
-            colourTab
+            colourTab,
+            winScreen,
+            loseScreen
         },
         // watch: {
         //     // function(this.colours.)
@@ -49,9 +57,9 @@
         data() {
             return {
                 colours: [],
-                win: null,
+                win: false,
                 pick: false,
-                colour: 'orange'
+                colour: ''
             }
         }
     }

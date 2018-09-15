@@ -6,11 +6,12 @@
 
         width: 25%;
         height: 25%;
-        border: 1px solid #555;
+        box-shadow: inset 0 0 3px #444;
     }
 
     div:hover {
         cursor: pointer;
+        opacity: 0.7;
     }
 </style>
 
