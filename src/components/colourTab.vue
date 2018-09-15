@@ -6,7 +6,7 @@
 
         position: absolute;
         z-index: 10;
-        right: 10%;
+        right: 5%;
         top: 0;
 
         width: 20%;
